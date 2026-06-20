@@ -125,7 +125,7 @@ export default function Quote() {
                     name="phone"
                     required
                     className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="+234 813 490 4208"
+                    placeholder="+234 905 208 2134"
                   />
                 </div>
                 <div className="sm:col-span-2">

@@ -1,4 +1,9 @@
-{"timestamp":"00:00:00.820","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:03.773","source":"Browser","level":"WARN","message":"Image with src \"/logo/bizcentra-logo.png\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"}
-{"timestamp":"00:00:03.801","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/logo/bizcentra-logo.png\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\" \"\\u001b[2m(file:///Users/macbookpro16m1pro1tb/Local Sites/bizcentra-website/.next/dev/static/chunks/0ly8_next_dist_1tgaskt._.js:2477:13)\\u001b[22m\""}
-{"timestamp":"00:00:03.801","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/logo/bizcentra-logo.png\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\u001b[39m"}
+{"timestamp":"00:00:00.952","source":"Server","level":"LOG","message":""}
+{"timestamp":"03:33:26.654","source":"Server","level":"LOG","message":"✓ Compiled in 966ms"}
+{"timestamp":"03:35:39.019","source":"Server","level":"LOG","message":"✓ Compiled in 142ms"}
+{"timestamp":"03:36:59.005","source":"Server","level":"LOG","message":"✓ Compiled in 101ms"}
+{"timestamp":"03:37:35.039","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
+{"timestamp":"03:40:02.457","source":"Server","level":"LOG","message":"✓ Compiled in 109ms"}
+{"timestamp":"03:41:06.270","source":"Server","level":"LOG","message":"✓ Compiled in 81ms"}
+{"timestamp":"03:41:42.498","source":"Server","level":"LOG","message":"✓ Compiled in 66ms"}
+{"timestamp":"03:59:30.517","source":"Server","level":"LOG","message":"✓ Compiled in 86ms"}

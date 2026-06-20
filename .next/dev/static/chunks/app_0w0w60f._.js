@@ -66,7 +66,7 @@ function Navbar() {
                             className: "flex items-center gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$9_react$2d$dom$40$19$2e$2$2e$7_react$40$19$2e$2$2e$7_$5f$react$40$19$2e$2$2e$7$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "tel:+234XXXXXXXXXX",
+                                    href: "tel:+2349052082134",
                                     className: "flex items-center gap-2 hover:text-secondary transition-colors",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$9_react$2d$dom$40$19$2e$2$2e$7_react$40$19$2e$2$2e$7_$5f$react$40$19$2e$2$2e$7$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$487$2e$0_react$40$19$2e$2$2e$7$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
@@ -77,7 +77,7 @@ function Navbar() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$9_react$2d$dom$40$19$2e$2$2e$7_react$40$19$2e$2$2e$7_$5f$react$40$19$2e$2$2e$7$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: "+234 813 490 4208"
+                                            children: "+234 905 208 2134"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Navbar.tsx",
                                             lineNumber: 29,
@@ -595,9 +595,9 @@ function Footer() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$2$2e$9_react$2d$dom$40$19$2e$2$2e$7_react$40$19$2e$2$2e$7_$5f$react$40$19$2e$2$2e$7$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                    href: "tel:+2348134904208",
+                                                    href: "tel:+2349052082134",
                                                     className: "text-slate-400 hover:text-secondary transition-colors text-sm",
-                                                    children: "+234 813 490 4208"
+                                                    children: "+234 905 208 2134"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/components/Footer.tsx",
                                                     lineNumber: 87,
@@ -2241,20 +2241,20 @@ var _s = __turbopack_context__.k.signature();
 ;
 const testimonials = [
     {
-        name: "Michael Adeyemi",
-        role: "CEO, AfriTrade Solutions",
+        name: "Procurement Director",
+        role: "Manufacturing Sector",
         content: "BizCentra Global has transformed our import operations. Their customs clearance support and freight forwarding services are top-notch. We have reduced our shipping delays by 70% since partnering with them.",
         rating: 5
     },
     {
-        name: "Sarah Okafor",
-        role: "Procurement Manager, TechNigeria Ltd",
+        name: "Supply Chain Manager",
+        role: "Technology Industry",
         content: "The procurement and sourcing team at BizCentra found us reliable suppliers in Asia at competitive prices. Their attention to quality control and documentation saved us significant time and money.",
         rating: 5
     },
     {
-        name: "James Mensah",
-        role: "Operations Director, BuildRight Construction",
+        name: "Operations Director",
+        role: "Construction & Engineering",
         content: "Handling heavy equipment and construction materials requires expertise. BizCentra's project logistics team delivered our machinery from Europe to Lagos seamlessly. Highly professional and reliable.",
         rating: 5
     }
@@ -2703,7 +2703,7 @@ function Quote() {
                                                 name: "phone",
                                                 required: true,
                                                 className: "w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all",
-                                                placeholder: "+234 813 490 4208"
+                                                placeholder: "+234 905 208 2134"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/sections/Quote.tsx",
                                                 lineNumber: 122,
@@ -3171,7 +3171,7 @@ function Contact() {
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$487$2e$0_react$40$19$2e$2$2e$7$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"],
             title: "Call Us",
             details: [
-                "+234 813 490 4208"
+                "+234 905 208 2134"
             ]
         },
         {
@@ -3495,7 +3495,7 @@ function Contact() {
                                                             id: "contact-phone",
                                                             name: "phone",
                                                             className: "w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all",
-                                                            placeholder: "+234 813 490 4208"
+                                                            placeholder: "+234 905 208 2134"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/sections/Contact.tsx",
                                                             lineNumber: 95,

@@ -17,7 +17,7 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: Mail, title: "Email Us", details: ["admin@bizcentraglobal.com.ng"] },
-    { icon: Phone, title: "Call Us", details: ["+234 813 490 4208"] },
+    { icon: Phone, title: "Call Us", details: ["+234 905 208 2134"] },
     { icon: MapPin, title: "Visit Us", details: ["BizCentra Global Limited", "38 Bayo Osinowo Ogudu,", "Lagos, Nigeria"] },
     { icon: Clock, title: "Business Hours", details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM"] },
   ];
@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label htmlFor="contact-phone" className="block text-sm font-medium text-slate-700 mb-2">Phone Number</label>
-                    <input type="tel" id="contact-phone" name="phone" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="+234 813 490 4208" />
+                    <input type="tel" id="contact-phone" name="phone" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="+234 905 208 2134" />
                   </div>
                   <div>
                     <label htmlFor="contact-subject" className="block text-sm font-medium text-slate-700 mb-2">Subject *</label>

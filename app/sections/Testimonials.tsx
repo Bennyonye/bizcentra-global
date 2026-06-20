@@ -6,22 +6,22 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Michael Adeyemi",
-    role: "CEO, AfriTrade Solutions",
+    name: "Procurement Director",
+    role: "Manufacturing Sector",
     content:
       "BizCentra Global has transformed our import operations. Their customs clearance support and freight forwarding services are top-notch. We have reduced our shipping delays by 70% since partnering with them.",
     rating: 5,
   },
   {
-    name: "Sarah Okafor",
-    role: "Procurement Manager, TechNigeria Ltd",
+    name: "Supply Chain Manager",
+    role: "Technology Industry",
     content:
       "The procurement and sourcing team at BizCentra found us reliable suppliers in Asia at competitive prices. Their attention to quality control and documentation saved us significant time and money.",
     rating: 5,
   },
   {
-    name: "James Mensah",
-    role: "Operations Director, BuildRight Construction",
+    name: "Operations Director",
+    role: "Construction & Engineering",
     content:
       "Handling heavy equipment and construction materials requires expertise. BizCentra's project logistics team delivered our machinery from Europe to Lagos seamlessly. Highly professional and reliable.",
     rating: 5,
