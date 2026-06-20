@@ -24,9 +24,9 @@ export default function Navbar() {
       <div className="bg-primary text-white text-sm py-2 section-padding hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:+2349052082134" className="flex items-center gap-2 hover:text-secondary transition-colors">
+            <a href="tel:+2349027458826" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Phone size={14} />
-              <span>+234 905 208 2134</span>
+              <span>+234 902 745 8826</span>
             </a>
             <a href="mailto:admin@bizcentra.com.ng" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Mail size={14} />
@@ -51,6 +51,7 @@ export default function Navbar() {
               height={60}
               className="h-12 w-auto"
               priority
+              loading="eager"  // ← Add this
             />
           </Link>
 

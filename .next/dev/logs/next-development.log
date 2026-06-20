@@ -1,9 +1,6 @@
-{"timestamp":"00:00:00.952","source":"Server","level":"LOG","message":""}
-{"timestamp":"03:33:26.654","source":"Server","level":"LOG","message":"✓ Compiled in 966ms"}
-{"timestamp":"03:35:39.019","source":"Server","level":"LOG","message":"✓ Compiled in 142ms"}
-{"timestamp":"03:36:59.005","source":"Server","level":"LOG","message":"✓ Compiled in 101ms"}
-{"timestamp":"03:37:35.039","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
-{"timestamp":"03:40:02.457","source":"Server","level":"LOG","message":"✓ Compiled in 109ms"}
-{"timestamp":"03:41:06.270","source":"Server","level":"LOG","message":"✓ Compiled in 81ms"}
-{"timestamp":"03:41:42.498","source":"Server","level":"LOG","message":"✓ Compiled in 66ms"}
-{"timestamp":"03:59:30.517","source":"Server","level":"LOG","message":"✓ Compiled in 86ms"}
+{"timestamp":"00:00:00.937","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:18.174","source":"Server","level":"WARN","message":"⚠ Blocked cross-origin request to Next.js dev resource /_next/webpack-hmr from \"192.168.0.100\".\nCross-origin access to Next.js dev resources is blocked by default for safety.\n\nTo allow this host in development, add it to \"allowedDevOrigins\" in next.config.js and restart the dev server:\n\n// next.config.js\nmodule.exports = {\n  allowedDevOrigins: ['192.168.0.100'],\n}\n\nRead more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins"}
+{"timestamp":"00:02:14.335","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:07:14.192","source":"Server","level":"LOG","message":"✓ Compiled in 684ms"}
+{"timestamp":"00:07:51.550","source":"Server","level":"LOG","message":"✓ Compiled in 65ms"}
+{"timestamp":"00:08:28.963","source":"Server","level":"LOG","message":"✓ Compiled in 75ms"}
