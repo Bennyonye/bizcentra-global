@@ -11,13 +11,12 @@ export async function POST(req: Request) {
     const isQuote = formType === "quote";
 
     const { data, error } = await resend.emails.send({
-        // In app/api/contact/route.ts
-        from: "BizCentra Global <noreply@bizcentra.com.ng>",
-        to: ["admin@bizcentra.com.ng"],  // Now this will work!
+      from: "BizCentra Global <noreply@bizcentra.com.ng>",  // ← Use your verified domain
+      to: ["admin@bizcentra.com.ng"],  // ← Your company email
+      replyTo: email as string,
       subject: isQuote
         ? `New Quote Request from ${name} - ${company}`
         : `New Contact Message from ${name}`,
-      replyTo: email as string,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #1e3a5f; border-bottom: 2px solid #f59e0b; padding-bottom: 10px;">
