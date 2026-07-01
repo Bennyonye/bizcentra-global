@@ -23,6 +23,24 @@ const services = [
   "Supply Chain",
 ];
 
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/share/18M7DjsYQX/?mibextid=wwXIfr",
+    label: "Facebook",
+    icon: Facebook,
+  },
+  {
+    href: "https://www.linkedin.com/company/bizcentra-global-limited/",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
+  {
+    href: "https://www.instagram.com/bizcentraglobal/",
+    label: "Instagram",
+    icon: Instagram,
+  },
+];
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -38,18 +56,21 @@ export default function Footer() {
               BizCentra Global Limited is your trusted partner for logistics, procurement, and global trade solutions across Africa and international markets.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors" aria-label="Facebook">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors" aria-label="Twitter">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors" aria-label="LinkedIn">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors" aria-label="Instagram">
-                <Instagram size={18} />
-              </a>
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-secondary transition-colors"
+                    aria-label={social.label}
+                  >
+                    <Icon size={18} />
+                  </a>
+                );
+              })}
             </div>
           </div>
 

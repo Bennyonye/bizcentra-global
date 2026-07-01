@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, Loader2 } from "lucide-react";
 
 const serviceOptions = [
   "Freight Forwarding",
@@ -20,11 +20,42 @@ export default function Quote() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      company: formData.get("company") as string,
+      service: formData.get("service") as string,
+      message: formData.get("message") as string,
+      formType: "quote",
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setSubmitted(false), 8000);
+      } else {
+        alert("Failed to submit quote request. Please try again.");
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -159,9 +190,9 @@ export default function Quote() {
                   />
                 </div>
               </div>
-              <button type="submit" className="w-full mt-6 btn-primary justify-center text-lg py-4">
-                <Send size={20} />
-                Submit Quote Request
+              <button type="submit" disabled={loading} className="w-full mt-6 btn-primary justify-center text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
+                {loading ? <Loader2 size={20} className="animate-spin" /> : <Send size={20} />}
+                {loading ? "Submitting..." : "Submit Quote Request"}
               </button>
             </form>
           )}

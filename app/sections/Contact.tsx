@@ -2,17 +2,47 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Loader2 } from "lucide-react";
 
 export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      subject: formData.get("subject") as string,
+      message: formData.get("message") as string,
+      formType: "contact",
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setSubmitted(false), 8000);
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -103,9 +133,9 @@ export default function Contact() {
                   <label htmlFor="contact-message" className="block text-sm font-medium text-slate-700 mb-2">Message *</label>
                   <textarea id="contact-message" name="message" rows={5} required className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" placeholder="Tell us more about your inquiry..." />
                 </div>
-                <button type="submit" className="w-full mt-6 btn-primary justify-center text-lg py-4">
-                  <Send size={20} />
-                  Send Message
+                <button type="submit" disabled={loading} className="w-full mt-6 btn-primary justify-center text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2">
+                  {loading ? <Loader2 size={20} className="animate-spin" /> : <Send size={20} />}
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             )}
