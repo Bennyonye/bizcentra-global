@@ -1,29 +1,17 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Services from "./sections/Services";
-import Industries from "./sections/Industries";
-import WhyChooseUs from "./sections/WhyChooseUs";
-import Testimonials from "./sections/Testimonials";
-import Quote from "./sections/Quote";
-import Tracking from "./sections/Tracking";
-import Contact from "./sections/Contact";
+import Hero from "@/app/sections/Hero";
+import ServicesOverview from "@/app/sections/ServicesOverview";
+import WhyChooseUs from "@/app/sections/WhyChooseUs";
+import Testimonials from "@/app/sections/Testimonials";
+import CTASection from "@/app/sections/CTASection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navbar />
+    <>
       <Hero />
-      <About />
-      <Services />
-      <Industries />
+      <ServicesOverview />
       <WhyChooseUs />
       <Testimonials />
-      <Quote />
-      <Tracking />
-      <Contact />
-      <Footer />
-    </main>
+      <CTASection />
+    </>
   );
 }

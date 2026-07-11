@@ -5,13 +5,12 @@ import Image from "next/image";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 
 const quickLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About Us" },
-  { href: "#services", label: "Services" },
-  { href: "#industries", label: "Industries" },
-  { href: "#why-us", label: "Why Choose Us" },
-  { href: "#quote", label: "Get a Quote" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/industries", label: "Industries" },
+  { href: "/quote", label: "Get a Quote" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const services = [
@@ -51,7 +50,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto section-padding py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Image src="/logo/bizcentra-logo.png" alt="BizCentra Global Limited" width={160} height={50} className="h-10 w-auto mb-6 brightness-0 invert" />
+            <Link href="/">
+              <Image 
+                src="/logo/bizcentra-logo.png" 
+                alt="BizCentra Global Limited" 
+                width={160} 
+                height={50} 
+                className="h-10 w-auto mb-6 brightness-0 invert" 
+              />
+            </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               BizCentra Global Limited is your trusted partner for logistics, procurement, and global trade solutions across Africa and international markets.
             </p>
@@ -79,7 +86,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-slate-400 hover:text-secondary transition-colors text-sm">{link.label}</a>
+                  <Link href={link.href} className="text-slate-400 hover:text-secondary transition-colors text-sm">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -90,7 +99,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
-                  <a href="#services" className="text-slate-400 hover:text-secondary transition-colors text-sm">{service}</a>
+                  <Link href="/services" className="text-slate-400 hover:text-secondary transition-colors text-sm">
+                    {service}
+                  </Link>
                 </li>
               ))}
             </ul>
