@@ -36,6 +36,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQH1JK881R"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YQH1JK881R');
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
